@@ -3,7 +3,7 @@ package model;
 import java.util.Scanner;
 
 /**
- * The type Shuttle spacecraft.
+ * Se crea la clase shuttle spacecraft que extiende de Spacecraft e implementa IStartFlight.
  */
 public class ShuttleSpacecraft extends Spacecraft implements IStartFlight {
 
@@ -13,7 +13,7 @@ public class ShuttleSpacecraft extends Spacecraft implements IStartFlight {
     private String payloadToLaunch;
 
     /**
-     * Instantiates a new Shuttle spacecraft.
+     * Instancia de una nueva Shuttle spacecraft.
      *
      * @param name            the name
      * @param thrust          the thrust
@@ -28,8 +28,14 @@ public class ShuttleSpacecraft extends Spacecraft implements IStartFlight {
         System.out.println("-- NAVE ESPACIAL LANZADERA --");
     }
 
+    /**
+     * Constructor por defecto de Shuttle spacecraft.
+     */
     public ShuttleSpacecraft() {}
 
+    /**
+     * Se crea el metodo create a shuttle spacecraft.
+     */
     public static void createAShuttleSpacecraft(){
 
         Scanner response = new Scanner(System.in);
@@ -51,12 +57,18 @@ public class ShuttleSpacecraft extends Spacecraft implements IStartFlight {
         shuttleSpacecraft.landed();
     }
 
+    /**
+     * Se sobre escribe el metodo showData de la clase padre Spacecraft.
+     */
     @Override
     public void showData() {
         super.showData();
         System.out.println("Carga útil a lanzar: " + payloadToLaunch);
     }
 
+    /**
+     * Se sobre escribe el metodo abstracto showImportantInformation de la clase padre Spacecraft.
+     */
     @Override
     public void showImportantInformation() {
         System.out.print("Informacion importante: ");
@@ -66,6 +78,10 @@ public class ShuttleSpacecraft extends Spacecraft implements IStartFlight {
                 " 32000×5 caballos, permitió transportar la nave tripulada Apolo hasta la Luna.");
     }
 
+    /**
+     * Se sobre escribe el metodo abstracto setCrew de la clase padre Spacecraft.
+     * @param crew the crew
+     */
     @Override
     public void setCrew(int crew) {
         if (crew <= 4) {
@@ -77,22 +93,33 @@ public class ShuttleSpacecraft extends Spacecraft implements IStartFlight {
     }
 
     /**
-     * Se sobre escribe el metodo despegar de la interface IIniciarVuelo
+     * Se implementa el metodo takeOff de la interface IStartFlight.
      */
     @Override
     public void takeOff() {
         System.out.println("La nave esta despegando");
     }
 
+    /**
+     * Se implementa el metodo landed de la interface IStartFlight.
+     */
     @Override
     public void landed() {
         System.out.println("La nave esta aterrizando");
     }
 
+    /**
+     * Metodo Get del atributo payload to launch.
+     * @return the payload to launch
+     */
     public String getPayloadToLaunch() {
         return payloadToLaunch;
     }
 
+    /**
+     * Metodo Set del atributo payload to launch.
+     * @param payloadToLaunch the payload to launch
+     */
     public void setPayloadToLaunch(String payloadToLaunch) {
         this.payloadToLaunch = payloadToLaunch;
     }

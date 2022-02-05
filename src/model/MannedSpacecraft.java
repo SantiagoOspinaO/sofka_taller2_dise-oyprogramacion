@@ -2,6 +2,9 @@ package model;
 
 import java.util.Scanner;
 
+/**
+ * Se crea la clase Manned spacecraft que extiende de Spacecraft e implementa IStartFlight.
+ */
 public class MannedSpacecraft extends Spacecraft implements IStartFlight {
 
     /**
@@ -11,13 +14,27 @@ public class MannedSpacecraft extends Spacecraft implements IStartFlight {
             "Experimentación o estudio del comportamiento humano en condiciones ingrávidas o en el exterior de la cápsula",
             "Mantenimiento de satélites o probar acoplamientos con otras naves y equipos electrónicos"};
 
+    /**
+     * Instancia de una nueva Manned spacecraft.
+     *
+     * @param name   the name
+     * @param thrust the thrust
+     * @param dough  the dough
+     * @param fuel   the fuel
+     */
     public MannedSpacecraft(String name, double thrust, double dough, String fuel) {
         super(name, thrust, dough, fuel);
     }
 
+    /**
+     * Constructor por defecto de  Manned spacecraft
+     */
     public MannedSpacecraft() {
     }
 
+    /**
+     * Se crea el metodo create a manned spacecraft.
+     */
     public static void  createAMannedSpacecraft(){
         Scanner response = new Scanner(System.in);
         MannedSpacecraft mannedSpacecraft = new MannedSpacecraft();
@@ -35,6 +52,9 @@ public class MannedSpacecraft extends Spacecraft implements IStartFlight {
         mannedSpacecraft.landed();
     }
 
+    /**
+     * Se crea el metodo Select propose.
+     */
     public void selectPropose(){
         MannedSpacecraft spacecraft;
         boolean isSpacecraft = true;
@@ -67,11 +87,17 @@ public class MannedSpacecraft extends Spacecraft implements IStartFlight {
 
     }
 
+    /**
+     * Se sobre escribe el metodo showData de la clase padre Spacecraft.
+     */
     @Override
     public void showData() {
        super.showData();
     }
 
+    /**
+     * Se sobre escribe el metodo abstracto showImportantInformation de la clase padre Spacecraft.
+     */
     @Override
     public void showImportantInformation() {
         System.out.print("Informacion importante: ");
@@ -81,6 +107,11 @@ public class MannedSpacecraft extends Spacecraft implements IStartFlight {
                 "orbitaba a una media de 248,9 km de distancia sobre la superficie terrestre.");
     }
 
+
+    /**
+     * Se sobre escribe el metodo abstracto setCrew de la clase padre Spacecraft.
+     * @param crew the crew
+     */
     @Override
     public void setCrew(int crew) {
         if (crew <= 6) {
@@ -92,11 +123,17 @@ public class MannedSpacecraft extends Spacecraft implements IStartFlight {
         }
     }
 
+    /**
+     * Se implementa el metodo takeOff de la interface IStartFlight.
+     */
     @Override
     public void takeOff() {
         System.out.println("La nave esta despegando");
     }
 
+    /**
+     * Se implementa el metodo landed de la interface IStartFlight.
+     */
     @Override
     public void landed() {
         System.out.println("La nave esta aterrizando");

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="266ff10c-7455-4736-8b1c-a7de7b43f16b" name="Changes" comment="Se crea la base del proyecto, la clase Spacecraft y el Main." />
+    <list default="true" id="266ff10c-7455-4736-8b1c-a7de7b43f16b" name="Changes" comment="Se actualiza el proyecto con las clases ShuttleSpacecraft, UnmmannedSpacecraft y MannedSpacecraft; además de la Interface IStartFlight.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/IStartFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/IStartFlight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/MannedSpacecraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/MannedSpacecraft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ShuttleSpacecraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ShuttleSpacecraft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Spacecraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Spacecraft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/UnmannedSpacecraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/UnmannedSpacecraft.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644034461925</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Se actualiza el proyecto con las clases ShuttleSpacecraft, UnmmannedSpacecraft y MannedSpacecraft; además de la Interface IStartFlight.">
+      <created>1644034720332</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1644034720332</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -78,6 +93,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se crea la base del proyecto, la clase Spacecraft y el Main." />
-    <option name="LAST_COMMIT_MESSAGE" value="Se crea la base del proyecto, la clase Spacecraft y el Main." />
+    <MESSAGE value="Se actualiza el proyecto con las clases ShuttleSpacecraft, UnmmannedSpacecraft y MannedSpacecraft; además de la Interface IStartFlight." />
+    <option name="LAST_COMMIT_MESSAGE" value="Se actualiza el proyecto con las clases ShuttleSpacecraft, UnmmannedSpacecraft y MannedSpacecraft; además de la Interface IStartFlight." />
   </component>
 </project>
