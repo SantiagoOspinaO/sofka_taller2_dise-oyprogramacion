@@ -1,4 +1,4 @@
-# sofka_taller2_disenioyprogramacion
+# sofka_taller2_disenio_y_programacion
 En este proyecto se tiene el objetivo de dar solución al taller 2 de las Canteras Nivel II  
 En este taller se evalua la abstracción, las interfaces y el polimorfismo según la interpretación de un texto donde se hablan de las naves espaciales, sus
 clasificaciones y sus principales caracteristicas.  
